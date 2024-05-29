@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Escola Francisco</title>
 	<link rel="stylesheet" href="style.css" type="text/css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 	<!-- CABEÇALHO DO SITE com itens de navegação para outra página -->
@@ -12,10 +13,10 @@
 		<img src="img/channels4_profile-removebg-preview.png" height="50">
 	
 		<nav>
-			<a href="index.html">INÍCIO</a>
-			<a href="">NOTÍCIAS</a>
-			<a href="">CURSOS TÉCNICOS</a>
-			<a href="">LOJA</a>
+			<a class="menuNav" href="index.html">INÍCIO</a>
+			<a class="menuNav" href="noticias.html">NOTÍCIAS</a>
+			<a class="menuNav" href="">CURSOS TÉCNICOS</a>
+			<a class="menuNav" href="">LOJA</a>
 		</nav>
 	
 		<a href="">
@@ -41,6 +42,7 @@
 	</section>
 
 	<div class="image-container">
+		<br>
 		<img class="portaoLeao" src="https://i.pinimg.com/564x/b5/35/f2/b535f2bc99cdffa16ff1b21ba60422b1.jpg" alt="portão da escola" height="700">
 	</div>
 
@@ -59,27 +61,40 @@
 		<h2>Histórias de Sucesso</h2>
 		<div class="success-story">
 			
-			<p>Um exemplo do sucesso dos nossos alunos é <span class="highlight">João Silva</span>, que cursou Técnico de Marketing e no ano passado conseguiu ser aprovado na <span class="highlight">USP</span>. Essa conquista ilustra a eficácia de nossos programas educacionais e o potencial de nossos estudantes.</p>
+		<p>Um exemplo do sucesso dos nossos alunos é <span class="highlight">João Silva</span>, que cursou Técnico de Marketing e no ano passado conseguiu ser aprovado na <span class="highlight">USP</span>. Essa conquista ilustra a eficácia de nossos programas educacionais e o potencial de nossos estudantes.</p>
 		</div>
 		<h2>Atividades Extracurriculares</h2>
 		<p>A Escola Estadual Francisco Pereira Souza Filho também promove diversas <span class="highlight">atividades extracurriculares</span>, como <span class="highlight">palestras educativas, campanhas de agasalho</span> e <span class="highlight">jogos de interclasse</span>, incluindo futebol, ping pong e xadrez. Esses eventos não só incentivam a prática esportiva e a competição saudável, mas também fortalecem os laços de amizade e colaboração entre os alunos. Além disso, a escola organiza clubes temáticos que proporcionam aos estudantes oportunidades para interagir e desenvolver habilidades sociais e intelectuais em um ambiente descontraído e estimulante.</p>
 		
-		<div class="atv-fotos" id="atv-fotos">
+		<div class="wrapper">
+      <i id="left" class="fa-solid fa-angle-left"></i>
+      <ul class="carousel">
+        <li class="card">
+          <div class="img"><img src="https://i.pinimg.com/564x/13/a5/80/13a580e7d8bdfffe06793f66e8877fea.jpg" alt="img" draggable="false"></div>
+        </li>
+        <li class="card">
+          <div class="img"><img src="https://i.pinimg.com/564x/9e/65/f8/9e65f88667f8357ac12b030435e18e54.jpg" alt="img" draggable="false"></div>
 
-			<div><img class="atv-fotos-edit" src="https://i.pinimg.com/564x/13/a5/80/13a580e7d8bdfffe06793f66e8877fea.jpg"></div>
+        </li>
+        <li class="card">
+          <div class="img"><img src="https://i.pinimg.com/564x/bd/76/c9/bd76c95ebd9fbfa54e4a818f0c0caf63.jpg" alt="img" draggable="false"></div>
 
-			<div></div><img class="atv-fotos-edit" src="https://i.pinimg.com/564x/9e/65/f8/9e65f88667f8357ac12b030435e18e54.jpg" alt="jacare"></div>
+        </li>
+        <li class="card">
+          <div class="img"><img src="https://i.pinimg.com/564x/af/dd/42/afdd42e34be82fa87eb6569c9d71a268.jpg" alt="img" draggable="false"></div>
 
-			<div></div><img class="atv-fotos-edit" src="https://i.pinimg.com/564x/bd/76/c9/bd76c95ebd9fbfa54e4a818f0c0caf63.jpg" alt=""></div>
+        </li>
+        <li class="card">
+          <div class="img"><img src="https://i.pinimg.com/564x/c0/34/42/c034424385a6ded913d4f4cf713d9054.jpg" alt="img" draggable="false"></div>
 
-			<div></div><img class="atv-fotos-edit" src="https://i.pinimg.com/564x/af/dd/42/afdd42e34be82fa87eb6569c9d71a268.jpg" alt=""></div>
+        </li>
+        <li class="card">
+          <div class="img"><img src="https://i.pinimg.com/564x/c0/34/42/c034424385a6ded913d4f4cf713d9054.jpg" alt="img" draggable="false"></div>
 
-			<div></div><img class="atv-fotos-edit" src="https://i.pinimg.com/564x/c0/34/42/c034424385a6ded913d4f4cf713d9054.jpg"></div>
-
-			<div></div><img class="atv-fotos-edit" src="https://i.pinimg.com/564x/30/f8/74/30f874e91b33571d55c0260e92eba229.jpg"></div>
-
-			<div></div><img class="atv-fotos-edit" src="https://i.pinimg.com/564x/b2/6b/56/b26b56393305b4624bccdfdd7922ea91.jpg"></div>
-		</div>
+        </li>
+      </ul>
+      <i id="right" class="fa-solid fa-angle-right"></i>
+    </div>
 		
 		<br>
 		<h2>Inovação e Tecnologia</h2>
@@ -101,7 +116,6 @@
 		</div>
 	</footer>
 
-	<script type="text/javascript" src="script.js">
 
 </body>
 </html>
